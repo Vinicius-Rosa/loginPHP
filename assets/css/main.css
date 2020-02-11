@@ -1,0 +1,143 @@
+html, body{
+    background-color: #38AECC;
+    height: 100vh;
+    overflow: hidden;
+}
+
+a:hover{ color: #38AECC; }
+
+main{ 
+    display: flex; 
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+.titulo{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 4vh;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.27);
+}
+
+.btn{
+    height: 40px;
+    width: 180px;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    flex-direction: column; 
+    width: 35%;  
+    margin-top: 10vh;
+    z-index: 1;
+}
+
+.container > form{
+    display: flex;
+    flex-direction: column;   
+    background: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 10px 15px -1px rgba(0,0,0,0.27);
+    -moz-box-shadow: 10px 10px 15px -1px rgba(0,0,0,0.27);
+    box-shadow: 10px 10px 15px -1px rgba(0,0,0,0.27);
+}
+
+.sociais{ display: flex; justify-content: space-between; align-items: center; padding: 20px 0; }
+    .facebook{ background: #4267B2; text-align: center; padding-top: 12px; width: 250px; transition: background-color .4s; }
+        .facebook:hover{ background: #2f4f8d; color: #fff; }
+    .google{ background: #DC4E41; text-align: center; padding-top: 12px; width: 250px; transition: background-color .4s; }
+        .google:hover{ background: #b33b30; color: #fff; }
+        
+label{
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#email, #password{ 
+    height: 35px; 
+    font-size: 15px; 
+    padding-left: 15px; 
+    margin-bottom: 20px;
+    border: 1.4px solid #ccc;
+    border-radius: 15px;
+    outline: none !important;
+}
+
+.row{ display: flex; justify-content: space-between; align-items: center; margin-top: 10px; }
+    .row > a{ text-decoration: underline; }
+
+.login{
+    background: #15d48e;
+    transition: background-color 0.4s;
+}
+    .login:hover{ background: #12ac73; }
+
+.outbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.link-cadastro{ background: #001021dc; text-align: center; padding-top: 12px; margin-right: 30px; transition: all .4s; }
+    .link-cadastro:hover{ background-color: #001021; }
+.p-little{ margin-left: 30px; }
+
+
+@media (max-width: 1680px){
+    .container{
+        width: 35%; 
+    }
+}
+
+/* (min-width: 768px) and  */
+@media (max-width: 1024px){
+    .container{
+        width: 50%; 
+    }
+
+    .facebook{ width: 200px; }
+    .google{  width: 200px; }
+}
+
+@media (min-width: 600px) and (max-width: 870px){
+    .container{
+        width: 60%; 
+    }
+
+    .facebook{ width: 200px; }
+    .google{  width: 200px; }
+}
+
+@media (max-width: 599px){
+    .container{
+        width: 90%; 
+    }
+
+    .facebook{ width: 180px; padding-top: 6px; }
+    .google{  width: 180px; padding-top: 6px; }
+
+    .link-cadastro{ padding-top: 6px; height: 50px; border-radius: 20px; padding: 10px; }
+}
+
+.squares li{
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff60;
+    display: block;
+    position: absolute;
+}

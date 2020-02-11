@@ -1,0 +1,88 @@
+/* Grow Up Animation */
+.grow-300ms{ animation: grow .3s ease; }
+
+.grow-400ms{ animation: grow .4s ease; }
+
+.grow-800ms{ animation: grow .8s ease; }
+
+
+@keyframes grow{
+    from{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+        to{
+            opacity: 1;
+            transform: scale(1);
+        }
+}
+
+/* Move Animation */
+
+.move-400ms{ animation: move .4s ease; }
+
+.move-500ms{ animation: move .5s ease; }
+
+.move-600ms{ animation: move .6s ease; }
+
+.move-700ms{ animation: move .7s ease; }
+
+@keyframes move{
+    from{
+        opacity: 0;
+        transform: translateX(-20%);
+    }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+}
+
+/* Head Shaking Animation */
+
+.headShake{ animation: headShake .180s linear; animation-iteration-count: 2; }
+
+@keyframes headShake{
+    0%, 100%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-15%);
+    }
+    70%{
+        transform: translateX(15%);
+    }
+}
+
+/* Slide Down Animation */
+
+.slideUp{ animation: slideUp .4s cubic-bezier(0.6, -0.28, 0.735, 0.045); animation-fill-mode: forwards; }
+
+@keyframes slideUp{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-100vh);
+    }
+}
+
+/* Squares Move Animation */
+
+.squares li{
+    animation: squares-move 2s infinite alternate;
+}
+
+@keyframes squares-move{
+    from{
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50%{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        transform: translateY(-1100px) rotate(960deg);
+    }
+}
