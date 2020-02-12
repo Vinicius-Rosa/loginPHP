@@ -15,15 +15,22 @@
         <div class="container">
             <h1 class="titulo grow-300ms">Login System</h1>
             <form action="" method="post" class="grow-400ms">
-                <div class="sociais move-400ms">
-                    <a href="#" class="btn facebook">Facebook Login</a>
-                    <a href="#" class="btn google">Google Login</a>    
-                </div>
-                <label for="email" class="move-500ms">Email:</label>
-                <input type="email" name="email" id="email" class="move-500ms" placeholder="contato@email.com">
+                <label for="name" class="move-500ms">Nome:</label>
+                <input type="name" name="name" id="name" class="move-500ms" placeholder="contato@email.com">
 
-                <label for="password" class="move-600ms">Senha:</label>
-                <input type="password" name="password" id="password" class="move-600ms" placeholder="********">
+                <label for="lastName" class="move-600ms">Sobrenome:</label>
+                <input type="name" name="lastName" id="lastName" class="move-600ms" placeholder="contato@email.com">
+
+                <label for="email" class="move-700ms">Email:</label>
+                <input type="email" name="email" id="email" class="move-700ms" placeholder="contato@email.com">
+
+                <div class="row move-800ms">
+                    <label for="password" class="label password move-800ms">Senha:</label>
+                    <input type="password" name="password" id="password" class="input move-800ms" placeholder="********">
+                     
+                    <label for="passwordConfirm" class="label passwordConfirm move-800ms">Confirmar Senha:</label>
+                    <input type="passwordConfirm" name="passwordConfirm" id="passwordConfirm" class="input move-800ms" placeholder="********">
+                </div>
 
                 <div class="row move-700ms">
                     <a href="#"> Recuperar Senha</a>

@@ -27,6 +27,8 @@
 
 .move-700ms{ animation: move .7s ease; }
 
+.move-800ms{ animation: move .8s ease; }
+
 @keyframes move{
     from{
         opacity: 0;

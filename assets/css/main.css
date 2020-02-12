@@ -53,7 +53,7 @@ main{
     box-shadow: 10px 10px 15px -1px rgba(0,0,0,0.27);
 }
 
-.sociais{ display: flex; justify-content: space-between; align-items: center; padding: 20px 0; }
+.sociais{ display: flex; justify-content: space-between; align-items: center; padding: 10px 0; }
     .facebook{ background: #4267B2; text-align: center; padding-top: 12px; width: 250px; transition: background-color .4s; }
         .facebook:hover{ background: #2f4f8d; color: #fff; }
     .google{ background: #DC4E41; text-align: center; padding-top: 12px; width: 250px; transition: background-color .4s; }
@@ -64,7 +64,7 @@ label{
     margin: 10px 0;
 }
 
-#email, #password{ 
+#email, #password, #name, #lastName, #passwordConfirm{ 
     height: 35px; 
     font-size: 15px; 
     padding-left: 15px; 
@@ -74,7 +74,7 @@ label{
     outline: none !important;
 }
 
-.row{ display: flex; justify-content: space-between; align-items: center; margin-top: 10px; }
+.row{ display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-top: 10px; }
     .row > a{ text-decoration: underline; }
 
 .login{
@@ -98,10 +98,28 @@ label{
 .p-little{ margin-left: 30px; }
 
 
+.squares li{
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff60;
+    display: block;
+    position: absolute;
+}
+
+.input{ max-width: 150px; margin-left: 15px; flex: 1; }
+
+.label{
+    padding-left: 4px;
+    padding-bottom: 15px;
+}
+    .password { margin-right: 5px; }
+    .passwordConfirm{ margin-right: 5px; }
+
 @media (max-width: 1680px){
     .container{
         width: 35%; 
     }
+    .input{ max-width: 350px; }
 }
 
 /* (min-width: 768px) and  */
@@ -124,20 +142,13 @@ label{
 }
 
 @media (max-width: 599px){
+    html, body{ overflow: inherit; }
     .container{
         width: 90%; 
     }
 
-    .facebook{ width: 180px; padding-top: 6px; }
-    .google{  width: 180px; padding-top: 6px; }
+    .facebook{ width: 180px; padding-top: 12px; }
+    .google{  width: 180px; padding-top: 12px; }
 
     .link-cadastro{ padding-top: 6px; height: 50px; border-radius: 20px; padding: 10px; }
-}
-
-.squares li{
-    height: 40px;
-    width: 40px;
-    background-color: #ffffff60;
-    display: block;
-    position: absolute;
 }
